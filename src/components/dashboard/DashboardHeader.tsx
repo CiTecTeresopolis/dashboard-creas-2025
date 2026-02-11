@@ -9,8 +9,8 @@ const DashboardHeader = () => {
 
       <div className="relative z-10 flex items-start justify-between">
         <div className="flex items-center gap-4">
-          <div className="p-3 rounded-2xl bg-white backdrop-blur-sm border border-white/10">
-            <img src="logo.png" className="h-10 w-10" />
+          <div className="p-2 rounded-2xl bg-white backdrop-blur-sm border border-white/10">
+            <img src="logo.svg" style={{ width: 120 }} />
           </div>
           <div>
             <h1 className="text-2xl md:text-3xl font-black tracking-tight">

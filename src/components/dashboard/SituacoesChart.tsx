@@ -1,4 +1,11 @@
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
+import {
+  PieChart,
+  Pie,
+  Cell,
+  ResponsiveContainer,
+  Legend,
+  Tooltip,
+} from "recharts";
 import { situacoesData } from "@/data/creas-data";
 import ChartSection from "./ChartSection";
 
@@ -11,7 +18,10 @@ const TOOLTIP_STYLE = {
 
 const SituacoesChart = () => {
   return (
-    <ChartSection title="Situações de Vulnerabilidade" description="Principais situações registradas">
+    <ChartSection
+      title="Situações de Vulnerabilidade"
+      description="Principais situações registradas"
+    >
       <ResponsiveContainer width="100%" height={300}>
         <PieChart>
           <Pie
@@ -23,7 +33,7 @@ const SituacoesChart = () => {
             dataKey="value"
             stroke="none"
             cornerRadius={4}
-            label={({ percent }) => `${(percent * 100).toFixed(0)}%`}
+            label={({ percent }) => `${(percent * 100).toFixed(2)}%`}
             labelLine={false}
           >
             {situacoesData.map((entry, index) => (
@@ -32,13 +42,20 @@ const SituacoesChart = () => {
           </Pie>
           <Tooltip
             contentStyle={TOOLTIP_STYLE}
-            formatter={(value: number, name: string) => [value.toLocaleString("pt-BR"), name]}
+            formatter={(value: number, name: string) => [
+              value.toLocaleString("pt-BR"),
+              name,
+            ]}
           />
           <Legend
             verticalAlign="bottom"
             iconType="circle"
             iconSize={9}
-            formatter={(value) => <span className="text-xs text-foreground ml-1 font-medium">{value}</span>}
+            formatter={(value) => (
+              <span className="text-xs text-foreground ml-1 font-medium">
+                {value}
+              </span>
+            )}
           />
         </PieChart>
       </ResponsiveContainer>
