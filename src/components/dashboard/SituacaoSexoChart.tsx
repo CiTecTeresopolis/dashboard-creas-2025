@@ -27,7 +27,7 @@ const SituacaoSexoChart = () => {
         <BarChart data={situacaoPorSexo} margin={{ left: 10 }}>
           <XAxis
             dataKey="situacao"
-            tick={{ fontSize: 10, fill: "hsl(var(--muted-foreground))" }}
+            tick={{ fontSize: 12, fill: "hsl(var(--muted-foreground))" }}
             interval={0}
             angle={-15}
             textAnchor="end"

@@ -14,7 +14,7 @@ const FaixaEtariaSituacaoChart = () => {
     <ChartSection title="Faixa Etária por Situação" description="Distribuição etária para cada tipo de vulnerabilidade">
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={faixaEtariaPorSituacao} margin={{ left: 10 }}>
-          <XAxis dataKey="situacao" tick={{ fontSize: 10, fill: "hsl(var(--muted-foreground))" }} interval={0} axisLine={false} tickLine={false} />
+          <XAxis dataKey="situacao" tick={{ fontSize: 12, fill: "hsl(var(--muted-foreground))" }} interval={0} axisLine={false} tickLine={false} />
           <YAxis tick={{ fontSize: 12, fill: "hsl(var(--muted-foreground))" }} axisLine={false} tickLine={false} />
           <Tooltip contentStyle={TOOLTIP_STYLE} cursor={{ fill: "hsl(var(--muted) / 0.4)" }} />
           <Legend
