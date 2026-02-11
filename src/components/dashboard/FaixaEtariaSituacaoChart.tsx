@@ -61,7 +61,8 @@ const FaixaEtariaSituacaoChart = () => {
             fill={CHART_COLORS[2]}
             stackId="a"
           />
-          <Bar dataKey="Adulto (19-59)" fill={CHART_COLORS[4]} stackId="a" />
+          <Bar dataKey="Jovem (19-29)" fill={CHART_COLORS[3]} stackId="a" />
+          <Bar dataKey="Adulto (30-59)" fill={CHART_COLORS[4]} stackId="a" />
           <Bar
             dataKey="Idoso (60+)"
             fill={CHART_COLORS[5]}

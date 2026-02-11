@@ -6,9 +6,10 @@ export const sexoData = [
 ];
 
 export const faixaEtariaData = [
-  { name: "Adulto (19-59)", value: 524 },
+  { name: "Adulto (19-59)", value: 433 },
   { name: "Adolescente (13-18)", value: 144 },
   { name: "Idoso (60+)", value: 100 },
+  { name: "Jovem (19-29)", value: 91 },
   { name: "Criança (0-12)", value: 86 },
 ];
 
@@ -38,9 +39,9 @@ export const situacaoPorSexo = [
 ];
 
 export const faixaEtariaPorSituacao = [
-  { situacao: "Trabalho Infantil", "Criança (0-12)": 0, "Adolescente (13-18)": 81, "Adulto (19-59)": 0, "Idoso (60+)": 0 },
-  { situacao: "Violência Intrafamiliar", "Criança (0-12)": 86, "Adolescente (13-18)": 62, "Adulto (19-59)": 203, "Idoso (60+)": 66 },
-  { situacao: "Situação de Rua", "Criança (0-12)": 0, "Adolescente (13-18)": 1, "Adulto (19-59)": 314, "Idoso (60+)": 20 },
+  { situacao: "Trabalho Infantil", "Criança (0-12)": 0, "Adolescente (13-18)": 81, "Jovem (19-29)": 0, "Adulto (30-59)": 0, "Idoso (60+)": 0 },
+  { situacao: "Violência Intrafamiliar", "Criança (0-12)": 86, "Adolescente (13-18)": 62, "Jovem (19-29)": 47, "Adulto (30-59)": 156, "Idoso (60+)": 66 },
+  { situacao: "Situação de Rua", "Criança (0-12)": 0, "Adolescente (13-18)": 1, "Jovem (19-29)": 44, "Adulto (30-59)": 270, "Idoso (60+)": 20 },
 ];
 
 export const bairrosViolencia = [
@@ -53,7 +54,7 @@ export const bairrosViolencia = [
 
 export const servicosData = [
   { name: "Proteção e Atend. Especializado a Famílias", value: 663 },
-  { name: "Medida Socioeducativa", value: 81 },
+  { name: "Medidas Socioeducativas", value: 81 },
   { name: "Proteção Social Esp. (Deficiência/Idosos)", value: 71 },
   { name: "Abordagem Social", value: 39 },
 ];

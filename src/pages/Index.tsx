@@ -22,7 +22,6 @@ const Index = () => {
 
       <div className="relative z-10 mx-auto px-4 md:px-6 py-8 md:py-12">
         <DashboardHeader />
-
         {/* KPI Cards */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 mb-10">
           <KPICard
@@ -45,35 +44,34 @@ const Index = () => {
             description="39,2% do total"
           />
           <KPICard
-            title="Serviços Prestados"
+            title="Serviços Ofertados"
             value={4}
             icon={UserCheck}
             description="Modalidades ativas"
           />
         </div>
-
         {/* Row 1: Demographics */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 mb-5">
           <SexoChart />
           <FaixaEtariaChart />
           <SituacoesChart />
         </div>
-
         {/* Row 2: Cross analysis */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-5 mb-5">
           <SituacaoSexoChart />
           <FaixaEtariaSituacaoChart />
         </div>
-
         {/* Row 3: Details */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 mb-5">
           <EscolaridadeChart />
           <BairrosChart />
           <ServicosChart />
         </div>
-
         {/* Footer */}
-        <footer className="text-center py-8 text-xs text-muted-foreground/60 font-medium">
+        <footer className="flex justify-center align-center text-center py-8 text-xs text-muted-foreground/60 font-medium">
+          <img style={{ width: 350, height: 150 }} src="cie.png" />
+        </footer>
+        <footer className="flex justify-center align-center text-center text-xs text-muted-foreground/60 font-medium">
           Prefeitura Municipal de Teresópolis // 2026 // Departamento de
           Governança e Dados
         </footer>

@@ -42,9 +42,7 @@ const SexoChart = () => {
           </Pie>
           <Tooltip
             contentStyle={TOOLTIP_STYLE}
-            formatter={(value: number) =>
-              `${[value.toLocaleString("pt-BR"), ""]}`
-            }
+            formatter={(value: number) => `${[value]}`}
           />
           <Legend
             verticalAlign="bottom"
